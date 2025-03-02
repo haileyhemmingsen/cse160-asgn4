@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numDot"> XXX </p>
+
+    <p>
+    Animation: 
+    <button type="button" id="animationOnButton">ON</button>
+    <button type="button" id="animationOffButton">OFF</button>
+
+    <p>
+    Normals: 
+    <button type="button" id="normalOnButton">Normal On</button>
+    <button type="button" id="normalOffButton">Normal Off</button>
+
+    <p>
+    Light: 
+    <button type="button" id="lightOnButton">Light On</button>
+    <button type="button" id="lightOffButton">Light Off</button>
+
+    <p>
+    <button type="button" id="regLightButton">Regular Light</button>
+    <button type="button" id="spotLightButton">Spot Light</button>
+    
+    <p>
+    Ambient Color 
+      R: <Input type="range" min="-250" max="250" value="0" class="slider" id="ambientRSlider">
+      G: <Input type="range" min="-250" max="250" value="0" class="slider" id="ambientGSlider">
+      B: <Input type="range" min="-250" max="250" value="0" class="slider" id="ambientBSlider">
+    
+    <p>
+      Light X: <Input type="range" min="-250" max="250" value="0" class="slider" id="lightXSlider">
+      Light Y: <Input type="range" min="-250" max="250" value="0" class="slider" id="lightYSlider">
+      Light Z: <Input type="range" min="-250" max="250" value="0" class="slider" id="lightZSlider">
+      
+
+    <p>
+    Body <Input type="range" min="-10" max="10" value="0" class="slider" id="bodySlider">
+    Head <Input type="range" min="-10" max="10" value="0" class="slider" id="headSlider">
+    
+    <p>
+    Front Left Arm <Input type="range" min="-10" max="10" value="0" class="slider" id="frontLArmSlider">
+    Front Right Arm <Input type="range" min="-10" max="10" value="0" class="slider" id="frontRArmSlider">
+    
+    <p>
+    Back Left Leg <Input type="range" min="-10" max="10" value="0" class="slider" id="backLLegSlider">
+    Back Right Leg <Input type="range" min="-10" max="10" value="0" class="slider" id="backRLegSlider">
+        
+    <p>
+    Tail <Input type="range" min="90" max="130" value="0" class="slider" id="tailSlider">
+    Middle Tail <Input type="range" min="-12" max="12" value="0" class="slider" id="middleTailSlider">
+    Tail Tip <Input type="range" min="43" max="50" value="0" class="slider" id="tailTipSlider">
+
+    <p>
+    Camera Angle <Input type="range" min="-180" max="180" value="5" class="slider" id="angleSlider">
+
+    Notes below:
+
+    <p>
+    Shift click for full body animation!
+    <br>
+    Use AWSD to move camera and QE to rotate the camera.
+    <br>
+    Use arrow keys (up, down, left and right arrows) to move cat around!
+    <br>
+    Find balls of yarn to play with the kitty! Can you find all 7??
+    
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cone.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
